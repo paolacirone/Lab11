@@ -7,6 +7,7 @@ public class River {
 	private int id;
 	private String name;
 	private double flowAvg;
+	private int numMisure;
 	private List<Flow> flows;
 	
 	public River(int id) {
@@ -50,6 +51,16 @@ public class River {
 		if (flows == null)
 			flows = new ArrayList<Flow>();
 		return flows;
+	}
+	
+	
+
+	public int getNumMisure() {
+		return numMisure;
+	}
+
+	public void setNumMisure(int numMisure) {
+		this.numMisure = numMisure;
 	}
 
 	@Override
